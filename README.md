@@ -1,5 +1,3 @@
-# Digispark PPM-to-USBJoystick 
-
 Use a digispark or similar (any attiny85) as an PPM-to-USBJoystick adapter using any ppm source.
 -
 There are some simulator cables out there that you can buy from nearly any shop which names 
