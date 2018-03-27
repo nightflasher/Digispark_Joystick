@@ -1,5 +1,3 @@
-//DigiJoystick test and usage documentation
-
 #include "DigiJoystick.h"
 
 #define NUM_OF_CHL 8          // we are working with an 8-ch-Transmitter
