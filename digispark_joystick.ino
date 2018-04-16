@@ -41,7 +41,7 @@ void setup(){
   
   pinMode(1, OUTPUT);
   pinMode(2, INPUT_PULLUP);
-
+  attachInterrupt(0, EvalPPM, RISING);    
 }
 
 void EvalPPM(){
@@ -69,10 +69,6 @@ void EvalPPM(){
 void loop(){
  char flysky[CHANNELS] = { x1, y1, x2, y2, sw1, sw2, aux1, aux2 };
 
-  attachInterrupt(0, EvalPPM, RISING);  
-  timelast = micros();
-  timelastloop = timelast;
- 
   if(ready){
    for (int i = 0; i < CHANNELS; i++){ 
     flysky[i] = (valuesUse[i]/4)-250;
@@ -80,9 +76,11 @@ void loop(){
     DigiJoystick.setValues(flysky);
     DigiJoystick.delay(50); // wait 50 milliseconds
     ready = false;
-    errorDetection(CHANNELS);
+//    errorDetection(CHANNELS);
+    digitalWrite(1, HIGH);
   }
   else{
-    errorDetection(1);
+//    errorDetection(1);
+    digitalWrite(1, LOW);
   }
 } 
