@@ -14,7 +14,6 @@
 #define sw2 125
 #define aux1 125
 #define aux2 125
-#define AVG 3
 
 volatile int valuesUse[CHANNELS+1] = {0};
 volatile byte counter = CHANNELS;
