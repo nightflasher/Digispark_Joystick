@@ -10,13 +10,13 @@ work out of the box. Even any transmitter with ppm output should work.
 
 ### tested
 - fs-a8s in ubuntu and windows
-- fs-i6x trainerport (8-ch only; need to read more about ppm)
+- fs-i6x trainerport (8-ch only; need to read more about ppm) => PPM is a 8 ch protocoll only => we have to deal with it!
 
 ### changes
 - changed some variable names
 - added attiny85 code for digispark/trinket
-- added more channels (still not sure if stable and supported by the protocol itself)
-- changed gap timing to 2500us
+- added more channels (still not sure if stable and supported by the protocol itself) => 8 ch only, deal with it
+- changed gap timing to 2100us => no more, but even less
 
 
 ### to-do
