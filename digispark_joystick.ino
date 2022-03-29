@@ -40,7 +40,7 @@ void EvalPPM(){
    ready = true;
   }
   else {
-    if (985< timediff && timediff < 2200 && counter < CHANNELS){
+    if (985< timediff && timediff < 2100 && counter < CHANNELS){
       valuesUse[counter] = timediff;
       counter++;
     }
